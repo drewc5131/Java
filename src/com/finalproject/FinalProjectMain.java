@@ -5,6 +5,8 @@ import org.json.*;
 
 import java.io.*;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class FinalProjectMain {
     public static void main(String[] args){
@@ -12,16 +14,21 @@ public class FinalProjectMain {
         String jsonData = "";
 
         print("Loading file");
-        try{
-            FileReader reader = new FileReader("MassNames.json");
+            Scanner fileLoader = new Scanner("MassNames.json");
 
-            JSONObject data = new JSONObject(reader);
+            String jsonString = fileLoader.nextLine();
+            print(jsonString);
 
-            print("Finished Loading");
-        }
-         catch (IOException e) {
-            e.printStackTrace();
-        }
+            JSONArray arr = new JSONArray(jsonString);
+
+            JSONArray nameArray = arr.getJSONArray(1);
+
+
+            JSONObject firstnameTest = nameArray.getJSONObject(0);
+
+            print(firstnameTest.getString("Name"));
+
+
 
 
     }
