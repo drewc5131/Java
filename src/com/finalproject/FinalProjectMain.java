@@ -1,21 +1,33 @@
 package com.finalproject;
 
-import com.eclipsesource.json.JsonObject;
+import org.json.*;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+
+import java.io.*;
+import java.io.IOException;
 
 public class FinalProjectMain {
     public static void main(String[] args){
-        GUIMain gui = new GUIMain();
-        gui.Start();
 
-        try (FileReader reader = new FileReader("planets.json")) {
-        }
-        catch (FileNotFoundException e){
+        String jsonData = "";
 
+        print("Loading file");
+        try{
+            FileReader reader = new FileReader("MassNames.json");
+
+            JSONObject data = new JSONObject(reader);
+
+            print("Finished Loading");
         }
-        JsonObject json = JsonObject.readFrom(data.);
+         catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+    public static void print(String str){
+        // hi i am lazy
+        System.out.println(str);
     }
 }
