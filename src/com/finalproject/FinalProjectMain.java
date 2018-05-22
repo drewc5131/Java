@@ -14,19 +14,21 @@ public class FinalProjectMain {
         String jsonData = "";
 
         print("Loading file");
-            Scanner fileLoader = new Scanner("MassNames.json");
-
-            String jsonString = fileLoader.nextLine();
-            print(jsonString);
-
-            JSONArray arr = new JSONArray(jsonString);
-
-            JSONArray nameArray = arr.getJSONArray(1);
+        Scanner fileLoader = null;
+        try {
+            fileLoader = new Scanner(new File("MassNames2001-min.json"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
 
-            JSONObject firstnameTest = nameArray.getJSONObject(0);
+        JSONObject allNames = new JSONObject(fileLoader.nextLine());
+        print("Loaded file!");
 
-            print(firstnameTest.getString("Name"));
+        JSONObject firstnameTest = allNames.getJSONObject("Jeffery");
+
+
+        print(Integer.toString(firstnameTest.getInt("Occurrences")));
 
 
 
