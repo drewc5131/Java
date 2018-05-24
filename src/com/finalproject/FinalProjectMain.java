@@ -25,10 +25,23 @@ public class FinalProjectMain {
         JSONObject allNames = new JSONObject(fileLoader.nextLine());
         print("Loaded file!");
 
-        JSONObject firstnameTest = allNames.getJSONObject("Jeffery");
+        Scanner input = new Scanner(System.in);
+        try {
+            String name = input.nextLine();
+            JSONArray firstnameTest = allNames.getJSONArray(name);
+            int howManyGenders = firstnameTest.length();
+            for (int i = 0; i < howManyGenders; i++) {
 
+                JSONObject nameData = firstnameTest.getJSONObject(i);
+                print("The Name " + name + " For the gender " + nameData.getString("Sex") + " Occurs " +
+                        Integer.toString(nameData.getInt("Occurrences")) + " Times");
+            }
 
-        print(Integer.toString(firstnameTest.getInt("Occurrences")));
+        }
+        catch (JSONException e){
+            e.printStackTrace();
+        }
+
 
 
 
