@@ -134,7 +134,7 @@
     border-radius: 10px;
     color: white;
     cursor: pointer;
-    background-image: radial-gradient(circle, #2196f3 80%, #0d87e9 81%);
+    background-image: radial-gradient(circle, #2196f3 80%, #0d87e9 80.01%);
     background-repeat: no-repeat;
     background-size: 200%;
     background-position: 50%;
@@ -157,8 +157,8 @@
         box-shadow: 0 0px 6px 0px #607D8B;
         background-color: #0d87e9;
         background-image: -webkit-radial-gradient(circle, #0d87e9 10%, #2196f3 11%);
-        background-image: -o-radial-gradient(circle, #0d87e9 10%, #2196f3 11%);
-        background-image: radial-gradient(circle, #0d87e9 10%, #2196f3 11%);
+        background-image: -o-radial-gradient(circle, #0d87e9 10%, #2196f3 10.1%);
+        background-image: radial-gradient(circle, #0d87e9 10%, #2196f3 10.1%);
         background-repeat: no-repeat;
         -webkit-background-size: 1000% 1000%;
         background-size: 1000%;
