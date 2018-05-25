@@ -131,7 +131,7 @@
     text-shadow: 0 0 black;
     text-decoration: none;
     border: 2px none #9E9E9E;
-    border-radius: 1px;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
     background-image: radial-gradient(circle, #2196f3 80%, #0d87e9 81%);
@@ -142,7 +142,7 @@
     font-size: 1rem;
     line-height: 1.25;
     text-align: center;
-    display: inline-block;
+    display: block;
 }
 
     .mainbtn:hover {
@@ -150,7 +150,7 @@
         background-size: 100%;
         color: white;
         text-decoration: none;
-        border-radius: 30px;
+        border-radius: 40px;
     }
 
     .mainbtn:active {
