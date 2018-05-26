@@ -168,3 +168,10 @@
         -webkit-background-size: 1000% 1000%;
         background-size: 1000%;
     }
+
+
+@media(max-width: 980px) {
+    .mainbtn {
+        font-size: 5rem !important
+    }
+}
