@@ -3,6 +3,7 @@ function OnPressQuestions() {
     document.body.classList.add('backgroundChangeColor');
     document.getElementById('jumbo').style.setProperty('font-size', '0', 'important')
     document.getElementById('title').style.setProperty('font-size', '0', 'important')
+    document.getElementById('desc').style.setProperty('font-size', '0', 'important')
     setTimeout(OpenQuestions, 3500)
 }
 

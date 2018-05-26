@@ -82,7 +82,6 @@
         background-image: -o-radial-gradient(circle, #0d87e9 10%, #2196f3 10.1%);
         background-image: radial-gradient(circle, #0d87e9 10%, #2196f3 10.1%);
         background-repeat: no-repeat;
-        -webkit-background-size: 1000% 1000%;
         background-size: 1000%;
     }
 
