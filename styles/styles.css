@@ -139,9 +139,11 @@
     }
 }
 
-.questionPageQuestion{
+.questionPageQuestion {
     font-size: 2rem;
     font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .questionPageAnswer {
     font-size: 2rem;
@@ -161,11 +163,12 @@
 
 @keyframes ItemFadeInUp{
     0%{
+
         opacity: 0;
-        transform: translate(0, 50px);
+        transform: perspective(20cm) translate(0, 50px) rotateX(70deg);
     }
     100% {
         opacity: 1;
-        transform: translate(0, 0px);
+        transform: translate(0, 0px) rotateX(0deg);
     }
 }
